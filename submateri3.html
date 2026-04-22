@@ -28,7 +28,39 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-  <link href="assets/css/materi.css" rel="stylesheet">
+
+  <style>
+    .content-card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .table-of-contents {
+      background: #617be9;
+      color: #fff;
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    .series-list a {
+      text-decoration: none;
+      display: block;
+      padding: 10px;
+      color: #333;
+      border-radius: 5px;
+    }
+
+    .series-list a.active {
+      background: #617be9;
+      color: white;
+    }
+
+    .series-list a:hover {
+      background: #e9ecef;
+    }
+  </style>
 </head>
 
 <body class="materi1-page-page">
@@ -48,9 +80,9 @@
           <li class="dropdown"><a href="materi.html" class="active"><span>Materi</span> <i
                 class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="submateri1.html">Literasi Digital</a></li>
-              <li><a href="submateri2.html">Computational Thinkhing</a></li>
-              <li><a href="submateri3.html">Algoritma & Pemrograman Dasar</a></li>
+              <li><a href="submateri1.html">Kelas 7</a></li>
+              <li><a href="submateri2.html">Kelas 8</a></li>
+              <li><a href="submateri3.html">Kelas 9</a></li>
             </ul>
           </li>
           <li><a href="evaluasi.html"><span>Evaluasi</span></a></li>
@@ -67,12 +99,12 @@
     <!-- Page Title -->
     <div class="page-title">
       <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0">Konsep Dasar Algoritma</h1>
+        <h1 class="mb-2 mb-lg-0">Kelas 9</h1>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
             <li><a href="materi.html">Materi</a></li>
-            <li class="current">Algoritma & Pemrograman Dasar</li>
+            <li class="current">Kelas 9</li>
           </ol>
         </nav>
       </div>
@@ -83,89 +115,150 @@
 
       <div class="container">
 
-        <div class="row">
-          <!-- Konten Utama -->
-          <div class="col-lg-8">
-            <div class="content-card">
-              <!-- Judul -->
-              <h2>Pengertian Algoritma</h2>
-
-              <hr>
-              <!-- <blockquote class="blockquote bg-light p-3 rounded">
-                <img src="https://assets-a1.kompasiana.com/items/album/2023/04/14/how-long-does-brewed-tea-last-64397432a7e0fa257a581062.jpeg" alt="" srcset="">
-              </blockquote> -->
-
-              <div class="jumbotron d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-                <a href="https://www.youtube.com/watch?v=uqVJc9lLknA" style="position: relative;" class="glightbox btn-watch-video d-flex align-items-center">
-                  <i class="bi bi-play-circle bi-lg" style="position: absolute; top: 50%; left: 50%; color: white; font-size: 2rem;"></i>
-                  <img src="https://assets-a1.kompasiana.com/items/album/2023/04/14/how-long-does-brewed-tea-last-64397432a7e0fa257a581062.jpeg" class="img-fluid animated" alt="" srcset="">
-                </a>
-              </div>
-
-              <section id="pengertian-algoritma" data-aos="fade-up" data-aos-delay="200">
-                <p>Algoritma adalah urutan langkah-langkah logis yang digunakan untuk menyelesaikan suatu masalah. Dalam
-                  kehidupan sehari-hari, kita sering menggunakan algoritma tanpa menyadarinya.</p>
-
-                <h3>Contoh Algoritma dalam Kehidupan Sehari-hari</h3>
-                <p>Misalnya, saat membuat teh manis, kita mengikuti langkah-langkah berikut:</p>
-                <ol>
-                  <li>Siapkan gelas, teh, gula, dan air panas.</li>
-                  <li>Masukkan gula ke dalam gelas.</li>
-                  <li>Tuangkan air panas.</li>
-                  <li>Aduk hingga gula larut.</li>
-                  <li>Teh siap diminum.</li>
-                </ol>
-
-                <h3>Algoritma dalam Pemrograman</h3>
-                <p>Dalam dunia komputer, algoritma digunakan untuk menyelesaikan berbagai tugas, seperti:</p>
-                <ul>
-                  <li>Mengurutkan data dari yang terkecil hingga terbesar.</li>
-                  <li>Menghitung jumlah angka dalam suatu daftar.</li>
-                  <li>Mencari informasi dalam sebuah database.</li>
-                </ul>
-
-                <p>Dengan algoritma yang baik, program komputer dapat bekerja lebih cepat dan efisien!</p>
-              </section>
-
+        <div class="row gy-4">
+          
+          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <img src="assets/img/literasi.png" alt="">
+              <a href="./materi/literasi-digital/buku-2.html" class="stretched-link">
+                <h3>Matematika</h3>
+              </a>
+              <p>Materi dan Buku Matematika SMP Kelas 9</p>
             </div>
-          </div>
-
-          <!-- Sidebar -->
-          <div class="col-lg-4">
-            
-
-            <!-- Seri Artikel -->
-            <div class="content-card" data-aos="fade-up" data-aos-delay="200">
-              <h5>📖 Topik Bahasan</h5>
-              <hr>
-              <div class="series-list">
-                <a href="#" class="active">1. Konsep Dasar Algoritma</a>
-                <a href="./materi/bahasa-pemrograman/definisi-bahasa-pemrograman.html">2. Bahasa Pemrograman</a>
-                <a href="./materi/notasi-algoritma/naratif.html">3. Notasi Algoritma</a>
-                <a href="./materi/struktur-dasar-algoritma/sekuensial.html">4. Struktur Dasar Algoritma</a>
-                <a href="./materi/dasar-pemrograman/pengertian-pemrograman.html">5. Dasar Pemrograman dengan C++</a>
-              </div>
+          </div><!-- End Service Item -->
+          
+          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <img src="assets/img/literasi.png" alt="">
+              <a href="./materi/literasi-digital/buku-3.html" class="stretched-link">
+                <h3>Bahasa Indonesia</h3>
+              </a>
+              <p>Materi dan Buku Bahasa Indonesia SMP Kelas 9</p>
             </div>
-<!-- Table of Contents -->
-            <div class="table-of-contents mb-3" data-aos="fade-up" data-aos-delay="100">
-              <h5 class="mb-3">📑 Materi</h5>
-              <hr>
-              <ul class="list-unstyled container">
-                <li class="mb-1"><a href="#" class="active">1. Pengertian algoritma</a></li>
-                <li class="mb-1"><a href="./materi/konsep-dasar-algoritma/karakteristik-algoritma-menurut.html">2. Karakteristik algoritma menurut Donald E. Knuth</a></li>
-                <li class="mb-1"><a href="./materi/konsep-dasar-algoritma/fungsi-algoritma.html">3. Fungsi algoritma dalam pemrograman</a></li>
-              </ul>
+          </div><!-- End Service Item -->
+          
+          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <img src="assets/img/literasi.png" alt="">
+              <a href="./materi/literasi-digital/buku-4.html" class="stretched-link">
+                <h3>Ilmu Pengetahuan Alam </h3>
+              </a>
+              <p>Materi dan Buku Ilmu Pengetahuan Alam SMP Kelas 9</p>
             </div>
-            <!-- Lembar Kerja -->
-            <div class="content-card mt-3" data-aos="fade-up" data-aos-delay="300">
-              <h5>✍️ Lembar Kerja Siswa</h5>
-              <hr>
-              <div class="series-list">
-                  <!-- Lembar Kerja Content -->
-                  <a href="https://drive.google.com/file/d/12oNGQyMp6TSC5ygPimglhcMqmoHrJUF2/view" target="_blank"><i class="bi bi-filetype-pdf"></i><span> Tugas.PDF</span></a>
-              </div>
-          </div>
-          </div>
+          </div><!-- End Service Item -->
+          
+          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <img src="assets/img/literasi.png" alt="">
+              <a href="./materi/literasi-digital/buku-5.html" class="stretched-link">
+                <h3>Ilmu Pengetahuan Sosial</h3>
+              </a>
+              <p>Materi dan Buku Ilmu Pengetahuan Sosial SMP Kelas 9</p>
+            </div>
+          </div><!-- End Service Item -->
+          
+          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <img src="assets/img/literasi.png" alt="">
+              <a href="./materi/literasi-digital/buku-6.html" class="stretched-link">
+                <h3>Informatika </h3>
+              </a>
+              <p>Materi dan Buku Informatika SMP Kelas 9</p>
+            </div>
+          </div><!-- End Service Item -->
+          
+          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <img src="assets/img/literasi.png" alt="">
+              <a href="./materi/literasi-digital/buku-7.html" class="stretched-link">
+                <h3>PJOK</h3>
+              </a>
+              <p>Materi dan Buku PJOK SMP Kelas 9</p>
+            </div>
+          </div><!-- End Service Item -->
+          
+          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <img src="assets/img/literasi.png" alt="">
+              <a href="./materi/literasi-digital/buku-8.html" class="stretched-link">
+                <h3>Qurdist</h3>
+              </a>
+              <p>Materi dan Buku Qurdist SMP Kelas 9</p>
+            </div>
+          </div><!-- End Service Item -->
+          
+          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <img src="assets/img/literasi.png" alt="">
+              <a href="./materi/literasi-digital/buku-9.html" class="stretched-link">
+                <h3>PPKN</h3>
+              </a>
+              <p>Materi dan Buku ppkn SMP Kelas 9</p>
+            </div>
+          </div><!-- End Service Item -->
+          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <img src="assets/img/literasi.png" alt="">
+              <a href="./materi/literasi-digital/buku-7.html" class="stretched-link">
+                <h3>Bahasa Inggris</h3>
+              </a>
+              <p>Materi dan Buku Bahasa Inggris SMP Kelas 9</p>
+            </div>
+            </div>
+            <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <img src="assets/img/literasi.png" alt="">
+              <a href="./materi/literasi-digital/buku-7.html" class="stretched-link">
+                <h3>Bahasa Daerah</h3>
+              </a>
+              <p>Materi dan Buku Bahasa Daerah SMP Kelas 9</p>
+            </div>
+            </div>
+          
+          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <img src="assets/img/literasi.png" alt="">
+              <a href="./materi/literasi-digital/buku-10.html" class="stretched-link">
+                <h3>Bahasa Arab </h3>
+              </a>
+              <p>Materi dan Buku Bahasa Arab  SMP Kelas 9</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <img src="assets/img/literasi.png" alt="">
+              <a href="./materi/literasi-digital/buku-3.html" class="stretched-link">
+                <h3>Aswaja Dan SKI</h3>
+              </a>
+              <p>Materi dan Buku Aswaja Dan SKI SMP Kelas 9</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <img src="assets/img/literasi.png" alt="">
+              <a href="./materi/literasi-digital/buku-3.html" class="stretched-link">
+                <h3>Aqidah Ahlak Dan Fiqih</h3>
+              </a>
+              <p>Materi dan Buku Aqidah Ahlak Dan Fiqih SMP Kelas 9</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <img src="assets/img/literasi.png" alt="">
+              <a href="./materi/literasi-digital/buku-3.html" class="stretched-link">
+                <h3>Seni Kebudayaan </h3>
+              </a>
+              <p>Materi dan Buku Seni Kebudayaan SMP Kelas 9</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          
+
+
+
         </div>
 
       </div>
@@ -253,3 +346,4 @@
 </body>
 
 </html>
+
